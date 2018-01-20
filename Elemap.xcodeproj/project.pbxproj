@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1334145024994983BBA0AE9B /* libPods-Elemap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F97E3BC7ACF0140463FA0CFD /* libPods-Elemap.a */; };
 		84D7D690200AB23300CD6E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D68F200AB23300CD6E4D /* AppDelegate.swift */; };
 		84D7D692200AB23300CD6E4D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D691200AB23300CD6E4D /* MainVC.swift */; };
 		84D7D695200AB23300CD6E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D7D693200AB23300CD6E4D /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06E33C69A9FCEFAAF45020A1 /* Pods-Elemap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elemap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elemap/Pods-Elemap.debug.xcconfig"; sourceTree = "<group>"; };
+		7AA3C461798DE925CFD5DCFD /* Pods-Elemap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elemap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elemap/Pods-Elemap.release.xcconfig"; sourceTree = "<group>"; };
 		84D7D68C200AB23300CD6E4D /* Elemap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elemap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D7D68F200AB23300CD6E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D7D691200AB23300CD6E4D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		84D7D699200AB23300CD6E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D7D69B200AB23300CD6E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D7D6A1200AB7D200CD6E4D /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		F97E3BC7ACF0140463FA0CFD /* libPods-Elemap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Elemap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1334145024994983BBA0AE9B /* libPods-Elemap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C820BC7205CC543E27544ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F97E3BC7ACF0140463FA0CFD /* libPods-Elemap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84D7D683200AB23300CD6E4D = {
 			isa = PBXGroup;
 			children = (
 				84D7D68E200AB23300CD6E4D /* Elemap */,
 				84D7D68D200AB23300CD6E4D /* Products */,
+				FE779D46DC6576282AF493E0 /* Pods */,
+				3C820BC7205CC543E27544ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = Elemap;
 			sourceTree = "<group>";
 		};
+		FE779D46DC6576282AF493E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06E33C69A9FCEFAAF45020A1 /* Pods-Elemap.debug.xcconfig */,
+				7AA3C461798DE925CFD5DCFD /* Pods-Elemap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D7D69E200AB23300CD6E4D /* Build configuration list for PBXNativeTarget "Elemap" */;
 			buildPhases = (
+				C17F0570BA09559850C81241 /* [CP] Check Pods Manifest.lock */,
 				84D7D688200AB23300CD6E4D /* Sources */,
 				84D7D689200AB23300CD6E4D /* Frameworks */,
 				84D7D68A200AB23300CD6E4D /* Resources */,
+				5D59F47F450D42E497D0687E /* [CP] Embed Pods Frameworks */,
+				1B7A6C2934687072391CE2EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B7A6C2934687072391CE2EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elemap/Pods-Elemap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D59F47F450D42E497D0687E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elemap/Pods-Elemap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17F0570BA09559850C81241 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84D7D688200AB23300CD6E4D /* Sources */ = {
@@ -276,6 +351,7 @@
 		};
 		84D7D69F200AB23300CD6E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06E33C69A9FCEFAAF45020A1 /* Pods-Elemap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +367,7 @@
 		};
 		84D7D6A0200AB23300CD6E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA3C461798DE925CFD5DCFD /* Pods-Elemap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
